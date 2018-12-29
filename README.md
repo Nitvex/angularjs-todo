@@ -1,1 +1,1 @@
-# This small project aims to get initial understanging of AngularJS
+# This small project aims to get initial understanding of AngularJS
