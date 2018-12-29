@@ -1,0 +1,1 @@
+# This small project aims to get initial understanging of AngularJS
