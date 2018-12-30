@@ -2,8 +2,8 @@
   margin-top: 1vh;
 }
 
-.ml-1{
-    margin-left: 1vh;
+.ml-1 {
+  margin-left: 1vh;
 }
 
 .to-do-item {
@@ -12,8 +12,9 @@
   max-width: 200px;
   min-width: 100px;
   padding: 0.2rem;
+  word-break: break-all;
 }
 
 .p-1 {
-    padding: 2px;
+  padding: 2px;
 }
