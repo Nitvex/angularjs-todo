@@ -1,4 +1,4 @@
-export default class ToDoItemController {
+export default class ToDoListController {
   constructor($scope) {
     this.$scope = $scope;
     this.items = [1, 2, 3, 4, 5];
@@ -7,7 +7,14 @@ export default class ToDoItemController {
   $onInit() {}
 
   add() {
-    const last = this.items[this.items.length - 1] + 1;
-    this.items.push(last);
+    this.items.push("");
+  }
+
+  delete(itemIndex) {
+    this.items.splice(itemIndex, 1);
+  }
+
+  change(itemIndex, value) {
+    this.items[itemIndex] = value;
   }
 }

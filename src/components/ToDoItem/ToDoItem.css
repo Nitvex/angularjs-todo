@@ -1,0 +1,19 @@
+.mt-1 {
+  margin-top: 1vh;
+}
+
+.ml-1{
+    margin-left: 1vh;
+}
+
+.to-do-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 200px;
+  min-width: 100px;
+  padding: 0.2rem;
+}
+
+.p-1 {
+    padding: 2px;
+}

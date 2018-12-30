@@ -1,1 +1,13 @@
-<li>{{$ctrl.item}}</li>
+<div class="row ml-1">
+    <div ng-if="!$ctrl.focused" ng-click="$ctrl.onFocus()" class="mt-1 to-do-item">
+    {{ $ctrl.item }}
+    </div>
+    <input
+    ng-if="$ctrl.focused"
+    class="mt-1 to-do-item form-control"
+    auto-focus="{{$ctrl.focused}}"
+    ng-blur="$ctrl.onBlur(this)"
+    ng-model="$ctrl.item"
+    />
+    <button class="btn btn-primary p-1 ml-1 mt-1" ng-click="$ctrl.delete()">X</button>
+</div>

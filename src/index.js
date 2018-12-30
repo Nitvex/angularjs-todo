@@ -1,9 +1,13 @@
 import "angular";
 import "@uirouter/angularjs";
 import "./components/index";
+import "./directives/index";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 angular.module("Libraries", ["ui.router"]);
-const app = angular.module("App", ["Libraries", "Components"]);
+const app = angular.module("App", ["Libraries", "Components", "Directives"]);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.when("", "/");
