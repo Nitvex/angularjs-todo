@@ -29,8 +29,4 @@ export default class ToDoListController {
   deleteList(listsIndex) {
     this.lists.splice(listsIndex, 1);
   }
-
-  change(listsIndex, value) {
-    this.lists[listsIndex] = value;
-  }
 }
