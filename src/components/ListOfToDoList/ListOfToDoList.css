@@ -1,0 +1,24 @@
+.list-of-lists {
+  padding: 2rem;
+  background-color: #7bc74e;
+}
+
+body,
+html {
+  background-color: #7bc74e;
+}
+
+.btn.btn-primary.add-list-btn {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.to-do-list {
+  display: inline-block;
+  min-width: 500px;
+  margin-left: 10%;
+}
+
+.to-do-lists{
+  display: block;  
+}

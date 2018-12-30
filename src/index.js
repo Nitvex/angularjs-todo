@@ -17,9 +17,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     {
       name: "home",
       url: "/",
-      controller: "ToDoListController",
+      controller: "ListOfToDoListController",
       controllerAs: "$ctrl",
-      template: require("Components/ToDoList/ToDoList.html")
+      template: require("Components/ListOfToDoList/ListOfToDoList.html")
     }
   ];
 

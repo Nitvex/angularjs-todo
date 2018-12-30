@@ -1,0 +1,16 @@
+<div class="list-of-lists">
+  <button class="btn btn-primary mt-1 add-list-btn" ng-click="$ctrl.add()">
+    Add new list
+  </button>
+  <div class="to-do-lists">
+    <to-do-list
+        ng-repeat="list in $ctrl.lists track by $index"
+        items="list.items"
+        name="list.name"
+        delete-list="$ctrl.deleteList($index)"
+        on-delete="$ctrl.delete($index)"
+        on-change="$ctrl.change($index, list.items)"
+        class="mb-1 to-do-list"
+    ></to-do-list>
+  </div>
+</div>

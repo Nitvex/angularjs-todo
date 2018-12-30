@@ -1,9 +1,28 @@
 <div class="ma-1 main-content">
-  <button class="btn btn-primary" ng-click="$ctrl.add()">Add one</button>
+  <h3 ng-if="!$ctrl.focused" ng-click="$ctrl.onFocus()" class="center list-name">
+    {{ $ctrl.name }}
+  </h3>
+  <input
+    auto-focus="{{ $ctrl.focused }}"
+    ng-blur="$ctrl.onBlur(this)"
+    ng-model="$ctrl.name"
+    ng-if="$ctrl.focused"
+    class="form-control"
+  />
   <to-do-item
     ng-repeat="item in $ctrl.items track by $index"
     item="item"
     on-delete="$ctrl.delete($index)"
     on-change="$ctrl.change($index, item)"
+    class="mb-1"
   ></to-do-item>
+  <button class="btn btn-primary mt-1 btn-to-do-list" ng-click="$ctrl.add()">
+    Add to do
+  </button>
+  <button
+    class="btn btn-primary mt-1 btn-to-do-list"
+    ng-click="$ctrl.deleteToDoList()"
+  >
+    Delete to do list
+  </button>
 </div>

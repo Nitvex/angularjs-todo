@@ -9,11 +9,12 @@
 .to-do-item {
   border: 1px solid #ccc;
   border-radius: 10px;
-  max-width: 85%;
+  max-width: 88%;
   min-width: 30%;
   padding: 0.2rem;
   word-break: break-all;
   cursor: pointer;
+  color: white;
 }
 
 .p-1 {
